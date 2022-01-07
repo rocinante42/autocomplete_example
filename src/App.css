@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  .container {
+  background-color: #dcdfe4;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-top: 30vh;
 }
 
-.App-link {
-  color: #61dafb;
+.autocomplete-input {
+  font-size: medium;
+  padding: 12px 8px 12px 8px;
+  min-width: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.suggestions {
+  border: 1px solid #999;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 143px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: calc(300px + 1rem);
 }
+
+.suggestions li {
+  font-size: medium;
+  padding: 12px 8px 12px 8px;
+  color: rgb(97, 96, 96)
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  background-color: #c1dce6;
+  cursor: pointer;
+  font-weight: 700;
+}
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}
+
+.suggestions b {
+  color: #000000;
+}
+
+.searchbox-label {
+  font-size: 1.0rem;
+  color: #000;
+}
+
