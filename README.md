@@ -2,6 +2,9 @@
 
 You can start typing into the input box: `Char` (as for Charmander) and see the results autosuggested for you!
 
+![image](https://user-images.githubusercontent.com/3924401/148532450-b37142c4-c6ea-4f59-af78-216c9694d70b.png)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
